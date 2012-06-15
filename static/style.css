@@ -254,7 +254,7 @@ div#login:hover, div#logout:hover{
 	margin-right: 30px;
 }
 
-#project-name:hover {
+div#project-name:hover {
 	color:black;
 }
 
