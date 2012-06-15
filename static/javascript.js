@@ -52,11 +52,11 @@ $(document).ready(function() {
 	$(document).on("click", 'div#project-name', function(){
 		location.reload();
 		editor.setValue("");//clear editor
-	})
+	});
 	
 	$(document).on("click", '.search-btn', function(){
 		search();
-	})
+	});
 	
 	$('#dropSearchString').keypress(function(e){
 		if(e.which==13){
