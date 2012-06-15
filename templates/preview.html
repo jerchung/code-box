@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="{{ url_for('static', filename='style.css')}}" rel="stylesheet" />
+		<script type="text/javascript" src="{{ url_for('static', filename='jquery.js')}}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='jquery.cookie.js')}}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='preview-javascript.js')}}"></script>
+	</head>
+	<body>
+		<div class="top-bar">
+			<div id="project-name" class="divLink">
+				Drop Edit
+			</div>
+			<div class="buttonsContainer">
+				<div class="buttonElement">
+					<button class="btn-custom" id="saveFile">
+						Save
+					</button>
+				</div>
+			</div>
+			<div id="warningMessagesContainer"></div>
+			<div class="topRowElementsContainer">
+				<div class="topRowElement" style="width:60px;" >
+					<div class="iconRefresh divLink"></div>
+				</div>
+				<div class="topRowElement" style="margin-left:70px">
+					<div class="floater-div" style="margin-bottom:-15px"></div>
+					<div class="search-form" style="clear:both;height:30px">
+						<form id="dropSearch">
+							<input type="text" class="inset" id="dropSearchString" name="dropSearchString" size="40" style="height:24px" placeholder="Search...">
+							<input type="button" class="search-btn" value="Go" style="text-align: center">
+						</form>
+					</div>
+				</div>
+				<div class="topRowElement" style="margin-left:30px">
+					<div id="login">
+						Login
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="restofDoc">
+			<div class="sideWrapper">
+				<div class="sideFeedMenu">
+					<div id="foldersListWrapper">
+						<div class="folder_or_file_indicator">
+							Folders
+						</div>
+						<ul class="actualElementList" id="dropboxFolderLinks"></ul>
+					</div>
+					<div id="filesListWrapper">
+						<div class="folder_or_file_indicator">
+							Files
+						</div>
+						<ul class="actualElementList" id="dropboxFileLinks"></ul>
+					</div>
+				</div>
+				<div class="leftHoverArea"></div>
+			</div>
+			<div class="main">
+				<div class="mainTopBar">
+					<div id="currentFolderPathContainer">
+						<div style="float:left; margin-right:5px;">
+							PATH:
+						</div>
+						<div id="currentFolderPath"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
