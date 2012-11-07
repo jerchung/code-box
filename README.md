@@ -5,4 +5,5 @@ An in-browser Dropbox code editor that uses almost all AJAX calls to get its inf
 
 Written using the Flask python microframework
 
-Deployed on heroku [code-box.heroku.com](code-box.heroku.com)
+Deployed on heroku [http
+://code-box.heroku.com](code-box.heroku.com)
